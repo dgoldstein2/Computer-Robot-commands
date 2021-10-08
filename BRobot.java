@@ -8,15 +8,12 @@ public class BRobot
 {
     public static void main(String[] args) throws Exception{
         Robot Alfred = new Robot();
-        
         Alfred.delay(2000);
         Alfred.mouseMove(80,1050);
         Alfred.delay(2000);
         Alfred.mousePress(InputEvent.BUTTON1_MASK);
         Alfred.mouseRelease(InputEvent.BUTTON1_MASK);
         Alfred.delay(1000);
-        
-        
         Alfred.keyPress(KeyEvent.VK_C); 
         Alfred.keyPress(KeyEvent.VK_H); 
         Alfred.keyPress(KeyEvent.VK_R); 
@@ -57,17 +54,5 @@ public class BRobot
         Alfred.keyPress(KeyEvent.VK_0);
         Alfred.keyPress(KeyEvent.VK_ENTER);
         Alfred.keyRelease(KeyEvent.VK_ENTER);
-        
-        
-        
-        
-        
-        
-         
-        
-        
-        
-        
-     
     }
 }
