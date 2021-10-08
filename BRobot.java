@@ -4,7 +4,7 @@ import java.awt.event.*;
 import java.awt.Label;
 import java.awt.Event;
 import java.util.ArrayList;
-public class BRobot
+public class chromeRobot
 {
     public static void main(String[] args) throws Exception{
         Robot Alfred = new Robot();
@@ -26,6 +26,10 @@ public class BRobot
         Alfred.mousePress(InputEvent.BUTTON1_MASK);
         Alfred.mouseRelease(InputEvent.BUTTON1_MASK);
         Alfred.delay(5000);
+        Alfred.mouseMove(1000,560);
+        Alfred.delay(1000);
+        Alfred.mousePress(InputEvent.BUTTON1_MASK);
+        Alfred.mouseRelease(InputEvent.BUTTON1_MASK);
         Alfred.mouseMove(400,60);
         Alfred.mousePress(InputEvent.BUTTON1_MASK);
         Alfred.mouseRelease(InputEvent.BUTTON1_MASK);
@@ -36,23 +40,10 @@ public class BRobot
         Alfred.keyPress(KeyEvent.VK_E);
         Alfred.keyPress(KeyEvent.VK_G);
         Alfred.keyPress(KeyEvent.VK_G);
+        Alfred.keyPress(KeyEvent.VK_G);
         Alfred.delay(1000);
         Alfred.keyPress(KeyEvent.VK_ENTER);
         Alfred.keyRelease(KeyEvent.VK_ENTER);
         Alfred.delay(1000);
-        Alfred.mouseMove(400,400);
-        Alfred.mousePress(InputEvent.BUTTON1_MASK);
-        Alfred.mouseRelease(InputEvent.BUTTON1_MASK);
-        Alfred.delay(500);
-        Alfred.keyPress(KeyEvent.VK_R);
-        Alfred.keyPress(KeyEvent.VK_T);
-        Alfred.keyPress(KeyEvent.VK_X);
-        Alfred.keyPress(KeyEvent.VK_SPACE);
-        Alfred.keyPress(KeyEvent.VK_3);
-        Alfred.keyPress(KeyEvent.VK_0);
-        Alfred.keyPress(KeyEvent.VK_8);
-        Alfred.keyPress(KeyEvent.VK_0);
-        Alfred.keyPress(KeyEvent.VK_ENTER);
-        Alfred.keyRelease(KeyEvent.VK_ENTER);
     }
 }
